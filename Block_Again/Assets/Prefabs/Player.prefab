@@ -139,4 +139,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 6158888836813239083}
-  spawn: {fileID: 0}

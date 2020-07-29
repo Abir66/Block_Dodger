@@ -8,15 +8,20 @@ public class GameManager : MonoBehaviour
     GameObject[] gameObjects;
     public bool ended = false;
     public float endDealy = 1f;
+
+    public GameObject music;
     public void Endgame()
     {
         if (ended == false)
         {
             ended = true;
+            
+            Destroy(music);
             Destroy(spawn);
 
             gameObjects = GameObject.FindGameObjectsWithTag("Obstacle");
 
+            
            
             for (var i = 0; i < gameObjects.Length; i++)
             {
